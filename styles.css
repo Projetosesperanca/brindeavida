@@ -156,11 +156,16 @@ body {
     padding: var(--spacing-xxl) 0;
     margin-top: 80px;
     background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    background-image: url('img/bannerBrindeaVida4.jpg');
 }
 
 .hero-content {
     flex: 1;
     padding: 0 var(--spacing-md);
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 5%;
+    padding: 20px;
 }
 
 .hero-content h1 {
@@ -265,6 +270,7 @@ body {
 
 .section-header {
     margin-bottom: var(--spacing-xl);
+    
 }
 
 /* Products Sections */
@@ -780,3 +786,19 @@ html {
 .mb-3 { margin-bottom: var(--spacing-md); }
 .mb-4 { margin-bottom: var(--spacing-lg); }
 .mb-5 { margin-bottom: var(--spacing-xl); }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
